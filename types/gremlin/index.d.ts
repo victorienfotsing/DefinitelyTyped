@@ -454,7 +454,7 @@ declare namespace process {
     const statics: Statics;
 
     class Translator {
-        constructor(traversalSource: AnonymousTraversalSource | GraphTraversalSource);
+        constructor(traversalSource: AnonymousTraversalSource | GraphTraversalSource | string);
         getTraversalSource(): Translator;
         of(traversalSource: AnonymousTraversalSource | GraphTraversalSource | string): void;
         translate(bytecode: Bytecode): string;
